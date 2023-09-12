@@ -241,6 +241,10 @@
                             <a href="{{ route('admin.product.all') }}"><i class="fas fa-hashtag"></i>
                                 <span>Products</span></a>
                         </li>
+                        <li class="">
+                            <a href=""><i class="fas fa-hashtag"></i>
+                                <span>upcoming products</span></a>
+                        </li>
                         <li>
                             <a href="{{ route('logout') }}"
                                 onclick="event.preventDefault();
