@@ -228,8 +228,9 @@
             <div class="sidebar-inner slimscroll">
                 <div id="sidebar-menu" class="sidebar-menu">
                     <ul>
-                        <li class="">
-                            <a href=""><i class="fas fa-columns"></i>
+                        {{-- dd(request()->route()) --}}
+                        <li class="{{ (request()->route()->getName() === 'admin.dashboard') ? 'active' : null }}">
+                            <a href="{{ route('admin.dashboard') }}"><i class="fas fa-columns"></i>
                                 <span>Dashboard</span></a>
                         </li>
                         <li class="{{ Route::is('admin.category.all') ? 'active' : null }}">
